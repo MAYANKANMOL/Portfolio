@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' ,sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;/*text color*/
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/newimg2.png");
+    background-size: auto;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+#logo{
+    font-size: 45px;
+    color: red;
+    display: inline-block;
+}
+span{
+    font-size: larger;
+    /*font-weight: bold;*/
+}
+.container{
+    padding: 10px 5%;
+}
+nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 15px;
+}
+nav ul li a{
+    color: bisque;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-left: 70px;
+    margin-top: 18%;
+    font-size: 50px;
+}
+/* ------about------ */
+#about{
+    padding: 70px 0;
+    /* background-color: rgb(18, 60, 86); */
+    background-color: #080808;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-me{
+    font-size: 60px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px; 
+}
+.tab-titles p{
+    font-size: 25px;
+}
+.tab-links{
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-content ul .outer{
+    margin-top: 10px;
+    list-style: none;
+}
+.tab-content ul .outer span{
+    font-size: 20px;
+}
+.tab-content ul .inner li{
+    font-size: 15px;
+}
+.tab-content ul span{
+    /* color: rgb(139, 34, 34); */
+    color: orange;
+    font-size: 14px;
+}
+.tab-content ul .inner{
+    list-style: none;
+    font-size: 14px;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active-tab{
+    display: block;
+}
+/* ------portfolio------ */
+#Portfolio{
+    /* background-color: rgb(18, 60, 86); */
+    background-color: #080808;
+    padding: 5px 0;    
+}
+.sub-title{
+    font-size: 65px;
+    color: #ababab;
+}
+.work-list{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin-top: 50px;
+    
+}
+.work{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.work img{
+    height: 75%;
+    width: 75%;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 75%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 20px;
+    position: absolute;
+    /* bottom: 50px; */
+    top: 0;
+    /* left: 0; 
+    right: 0; */
+    bottom: 0; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0,40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    font-family: bold;
+    margin-bottom: 5px;
+}
+.layer a{
+    margin-top: 10px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 26px;
+    line-height: 60px;
+}
+/* .work img:hover{
+    transform: scale(1.3);
+} */
+.work:hover .layer{
+    height: 75%;
+}
+/* .button{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 10px 40px;
+    border-radius: 6px;
+    color: #fff;
+}
+.button:hover{
+    background: #ff004f; 
+}*/
+.sub-title2{
+    font-size: 65px;
+    color: #ababab;
+}
+/* ------contact------ */
+.contact-list{
+    margin-top: 20px;
+}
+.contact-list span i{
+    color: #ff004f;
+    margin-right: 6px;
+}
+.contact-list .icon2{
+    color: #ababab;
+    margin-right: 15px;
+}
+/* .end{
+     background-color: black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -6px; 
+}  */
+/* ------css for small screen------ */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url("images/phone_size3.png");
+        background-size: 155%;
+        margin-left: 10px;
+    }
+    .header-text{
+        margin-top: 70%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 40px;
+        margin-left: -50px;
+    }
+    #logo span{
+        font-size: 40px;
+    }
+    nav .fa-solid{
+        font-size: 25px;
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul{
+        background-color: rgb(230, 0, 0);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav .fa-solid{
+        margin-right: 25px;
+    }
+    #about{
+        margin: 20px;
+    }
+    .about-me{
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        margin-right: 8px;
+    }
+    .tab-titles p{
+        font-size: 16px;
+        margin-right: auto;
+        font-weight: 500;
+    }
+    #portfolio{
+        margin: 20px;
+    }
+    .sub-title2{
+        font-size: 50px;
+    }
+}
