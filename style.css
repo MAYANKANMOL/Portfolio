@@ -144,6 +144,9 @@ nav ul li a:hover::after{
 .tab-content.active-tab{
     display: block;
 }
+.changes{
+    color: #ff004f;
+}
 /* ------portfolio------ */
 #Portfolio{
     /* background-color: rgb(18, 60, 86); */
