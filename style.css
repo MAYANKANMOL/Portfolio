@@ -145,7 +145,7 @@ nav ul li a:hover::after{
     display: block;
 }
 .about-col-2 .changes{
-    color: orange;
+    font-style: italic;
 }
 /* ------portfolio------ */
 #Portfolio{
