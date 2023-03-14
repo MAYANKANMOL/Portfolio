@@ -206,12 +206,11 @@ nav ul li a:hover::after{
     color: #ff004f;
     text-decoration: none;
     font-size: 20px;
-    line-height: 60px;
     background-color: #fff;
     border-radius: 50%;
     width: 30px;
     height: 26px;
-    line-height: 60px;
+    line-height: 26px;
 }
 /* .work img:hover{
     transform: scale(1.3);
